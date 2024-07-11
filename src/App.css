@@ -1,0 +1,174 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+   
+}
+
+.resume-title{
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-form, .resumeGeneral-list{
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ResumeForm-label textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none; 
+  overflow: hidden; 
+  box-sizing: border-box;
+}
+
+.resume-labels {
+  display: flex;
+  flex-direction: column;
+}
+
+.ResumeForm-label{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  color: #555;
+  margin-bottom: 20px; 
+}
+
+.ResumeForm-title, .ResumeList-title, .EditResume-title, .ResumeForm-link, .ResumeList-link {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 15px 5px;
+}
+
+.ResumeForm-link{
+  display: flex;
+  text-align: right;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.resume-list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.resume-item pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 16px;
+}
+
+.resume-item {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.resume-item .resume-actions {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+} 
+
+.resume-output{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-resume-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-output textarea, .edit-resume-form textarea {
+  width: calc(100% - 40px); 
+  padding: 10px;
+  margin: 10px;
+  min-height: 100px;
+  max-height: 1000vh;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+  overflow: hidden;
+  box-sizing: border-box; 
+}
+
+.ResumeForm-link-button, .ResumeList-link-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ResumeForm-link-button:hover, .ResumeList-link-button:hover {
+  background-color: #0056b3;
+}
+
+.ResumeList-button, .ResumeForm-button, .ResumeListDelete-button, .EditResume-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ResumeList-button, .ResumeForm-button, .EditResume-button {
+  background-color: #007bff;
+}
+
+.ResumeListDelete-button{
+  background-color: #ee0000;
+}
+
+.ResumeList-button:hover, .ResumeForm-button:hover, .EditResume-button:hover {
+  background-color: #0056b3;
+}
+
+.ResumeListDelete-button:hover{
+  background-color: #ad0000;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
